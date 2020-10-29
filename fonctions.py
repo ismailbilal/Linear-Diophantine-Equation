@@ -1,4 +1,4 @@
-#this fonction is for calculate the greatest common divisor
+#this fonction is for calculate the greatest common divisor of tow integrs
 def fGCD(a,b) :
     if abs(a) < abs(b) :
         q=b
@@ -13,7 +13,7 @@ def fGCD(a,b) :
     return r 
 
 
-#this fonction is for calculate an initial solution
+#to calculate an initial solution
 def initial_solution(a,b,c) :
     #~~~~find an initial integer solution
     y=1
