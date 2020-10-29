@@ -14,4 +14,4 @@ else:
     y=write_y(y)
     bi=write_coef(bi)
     ai=write_coef(ai)
-    print(f'the solutions of this Diophantine equation is (x,y)=[({x}{bi}k,{y}{ai}k)/ for k integer]')
+    print(f'the solutions of {a}x+{b}y={c} is (x,y)=[({x}{bi}k,{y}{ai}k)/ for k integer]')
