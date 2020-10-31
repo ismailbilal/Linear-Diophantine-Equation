@@ -1,4 +1,4 @@
-from fonctions import fGCD,initial_solution,write_y,write_x,write_coef
+from fonctions import fGCD,initial_solution,write_x,write_coef
 print('to solve a Linear Diophantine Equation ,ax+by=c')
 a=int(input('enter a : '))
 b=int(input('enter b : '))
@@ -10,8 +10,8 @@ else:
     (x,y)=initial_solution(a,b,c)
     bi=int(b/gcd)
     ai=int(a/gcd)
-    x=write_x(x)
-    y=write_y(y)
+    x=write_x(x, "+")
+    y=write_x(y, "-")
     bi=write_coef(bi)
     ai=write_coef(ai)
     print(f'the solutions of {a}x+{b}y={c} is (x,y)=[({x}{bi}k,{y}{ai}k)/ for k integer]')
