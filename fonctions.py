@@ -37,15 +37,8 @@ def initial_solution(a,b,c) :
 
 
 #to make solution looks better
-def write_x(x) :
-    wr_var = {True : f'{x}+', False : ""}
-    return wr_var[
-        x != 0
-    ]
-
-
-def write_y(x) :
-    wr_var = {True : f'{x}-', False : ""}
+def write_x(x, op) :
+    wr_var = {True : f'{x}{op}', False : ""}
     return wr_var[
         x != 0
     ]
