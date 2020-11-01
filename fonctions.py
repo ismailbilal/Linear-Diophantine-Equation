@@ -1,4 +1,4 @@
-#this fonction is for calculate the greatest common divisor of tow integrs
+#this fonction is for calculate the greatest common divisor
 def fGCD(a,b) :
     if abs(a) < abs(b) :
         q=b
@@ -13,7 +13,7 @@ def fGCD(a,b) :
     return r 
 
 
-#to calculate an initial solution
+#this fonction is for calculate an initial solution
 def initial_solution(a,b,c) :
     #~~~~find an initial integer solution
     y=1
@@ -45,7 +45,14 @@ def write_x(x, op) :
 
 
 def write_coef(x) :
-    wr_coef = {True : f'{x}', False : ""}
-    return wr_coef[
-        x != 1
-    ]
+    if x == 1:
+        return ""
+    return abs(x)
+    
+
+def write_op(op, a) :
+    if int(a) < 0 :
+        if op == "-" :
+            return "+"
+        return "-"
+    return op
