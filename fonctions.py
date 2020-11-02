@@ -45,7 +45,7 @@ def write_x(x, op) :
 
 
 def write_coef(x) :
-    if x == 1:
+    if abs(x) == 1:
         return ""
     return abs(x)
     
